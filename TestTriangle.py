@@ -24,7 +24,7 @@ class TestTriangles(unittest.TestCase):
         # Test with non-integer values
         self.assertEqual(classifyTriangle(10.2,300,4),'InvalidInput','10.2,300,4 is InvalidInput')
         # Test with values that cannot form a triangle (c > a + b)
-        self.assertEqual(classifyTriangle(1,2,4),'InvalidInput','10.2,300,4 is InvalidInput')
+        self.assertEqual(classifyTriangle(1,2,4),'NotATriangle','1,2,4 is NotATriangle')
 
     def testRightTriangles(self):
         self.assertEqual(classifyTriangle(3,4,5),'Right','3,4,5 is a Right triangle')
